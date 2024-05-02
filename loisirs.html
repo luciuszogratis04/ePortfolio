@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loisirs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/banniere.png" alt="bannière"> <!--width="100%", height="auto"-->
+    </header>
+
+    <!--############################## DEBUT DE LA BARRE DE NAVIGATION ##############################-->
+
+    <nav id="barre">
+        <ul>
+            <li><a href="index.html">Accueil</a>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li> <!--renvoie à l'ancre presenttaion de la page accueil-->
+                    <li><a href="index.html#projet">Projet pro</a></li>
+                </ul>
+            </li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="loisirs.html" id="actuelle">Loisirs</a>
+                <ul>
+                    <li><a href="loisirs.html#jeux-videos">Jeux-vidéos</a></li> <!--Renvoie aux ancres de la page loisirs (le nom de l'ancre est après le #)-->
+                    <li><a href="loisirs.html#basketball">Basketball</a></li>
+                    <li><a href="loisirs.html#manga">Manga/Anime</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--############################## FIN DE LA BARRE DE NAVIGATION ##############################-->
+    
+    <div class="page"> <!--Cette div comporte toute la page. Elle va raccourcir un peu la largeur de la page entière (sauf la bannière et la barre de navigation) et rajouter un fond de couleur (très peu visible)-->
+        <h1>Loisirs</h1> <!--informe sur quelle page nous sommes-->
+        <hr size="3px" color="turquoise"> <!--grande ligne-->
+
+        <!--############################## DEBUT DE LA DIVISION JEUX VIDEOS ##############################-->
+
+        <div>
+            <h2>Jeux-vidéos</h2>
+            <h3>Les jeux vidéos sont une de mes passions qui est en rapport avec mon projet professionnel. Voici une liste des jeux vidéos auxquels je joue le plus.</h3>
+            <p id="info"><i>les images ci-dessous ne sont pas des fichiers locaux. Veuillez être connecté à internet afin de pouvoir les visionner.</i></p>
+            <section class="boite" id="jeux-videos">
+                <h2>Genshin Impact</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://static.actugaming.net/media/2022/10/genshin-impact-version-3-2.jpg" alt="Image promotionnelle de la version 3.2 de Genshin Impact">
+            </section>
+
+            <section class="boite" id="jeux-videos">
+                <h2>osu!</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://user-images.githubusercontent.com/13122796/52345965-ca202300-2a1e-11e9-88f7-72660be945bf.png" alt="image d'une version de développement d'osu! Lazer">
+            </section>
+
+            <section class="boite" id="jeux-videos">
+                <h2>Minecraft</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://i.ytimg.com/vi/4HPCHBetddo/maxresdefault.jpg" alt="Image promotionnelle de la version 1.19 de Minecraft">
+            </section>
+
+            <section class="boite" id="jeux-videos">
+                <h2>Overwatch</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://leclaireur.fnac.com/wp-content/uploads/2022/10/overwatch-header.jpg" alt="Image promotionnelle du jeu Overwatch">
+            </section>
+
+            <section class="boite" id="jeux-videos">
+                <h2>tetr.io</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://tetris.wiki/images/thumb/1/17/TETR.IO_title.jpg/1200px-TETR.IO_title.jpg" alt="Menu principal du jeu tetr.io">
+            </section>
+        </div>
+
+        <!--############################## FIN DE LA DIVISION JEUX VIDEOS ##############################-->
+        
+        <hr size="3px" color="turquoise"> <!--grande ligne de transition-->
+
+        <!--############################## DEBUT DE LA DIVISION BASKETBALL ##############################-->
+
+        <div>
+            <h2>Basketball</h2>
+            <h3>Une autre de mes passions, le basketball . <br>
+            Je suis leur matchs et actualités assez souvent.</h3>        
+            <p id="info"><i>les images ci-dessous ne sont pas des fichiers locaux. Veuillez être connecté à internet afin de pouvoir les visionner.</i></p>
+            <section class="boite" id="basketball">
+                <h2>Joueur favori</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://wallpaper.dog/large/17013162.jpg" alt="Photo du sportif Lebron James">
+                <p>
+                    Voici une photo du sportif Lebron James qui fait partie de mon équipe favorite, les Lakers.
+                </p>
+            </section>
+
+           
+        </div>
+
+        <!--############################## FIN DE LA DIVISION BASKETBALL ##############################-->
+    
+        <hr size="3px" color="turquoise"> <!--grande ligne de transition-->
+
+        <!--############################## DEBUT DE LA DIVISION ANIME/MANGA ##############################-->
+
+        <div>
+            <h2>Anime/Manga</h2>
+            <h3>La dernière passion que je présente sur ce ePortfolio est les Anime et Manga. </h3>
+            <p id="info"><i>les images ci-dessous ne sont pas des fichiers locaux. Veuillez être connecté à internet afin de pouvoir les visionner.</i></p>
+            <section class="boite" id="manga">
+                <h2>Demon Slayer</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://www.cinemaspathegaumont.com/media/movie/9205042/backdrop/33305/lg/1/demon-slayer.jpg" alt="UMAI">
+            </section>
+
+            <section class="boite" id="manga">
+                <h2>My Hero Academia</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://www.themoviedb.org/t/p/original/jsXKG9uppnPrhqFNhImllyCfLhl.jpg" alt="abréviation: mha">
+            </section>
+            <section class="boite" id="manga">
+                <h2>Danganronpa</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://www.pockettactics.com/wp-content/sites/pockettactics/2022/10/danganronpa-wallpaper-3.jpg" alt="Ce manga est adapté d'un jeu vidéo.">
+            </section>
+            
+            <section class="boite" id="manga">
+                <h2>One Punch Man</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://fr.web.img4.acsta.net/newsv7/19/04/10/17/03/0985597.jpg" alt="abréviation: opm">
+            </section>
+
+            <section class="boite" id="manga">
+                <h2>Gambling School</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <img src="https://wallpapercave.com/wp/wp5235325.jpg" alt="image du personnage principal">
+            </section>
+        </div>
+
+        <!--############################## FIN DE LA DIVISION ANIME/MANGA ##############################-->
+                
+    </div>
+</body>
+</html>

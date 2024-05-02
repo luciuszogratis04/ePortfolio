@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Aller;
+    src: url(/polices/aller.ttf);
+}
+html{
+    font-family: Aller; /*Police d'écriture*/
+}
+.page{
+    width:90%;
+    margin: 0 5%;
+    background-color: aliceblue;
+}
+header img{ /*Bannière*/
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+h1, h2{ /*Tous les titres*/
+    color: #2d9d92;
+}
+h3, #info{
+    color: turquoise;
+}
+hr{
+    size: 3px;
+    color: turquoise;
+    opacity: 1;
+}
+/*########################### DEBUT BARRE DE NAVIGATION ############################*/
+
+#barre{
+    display: flex;
+    background-color: #40e0d0;
+    margin-bottom: 75px; /*espace sous la barre de navigation*/
+}
+#barre ul{ /*On retire les points de la liste*/
+    list-style-type: none;
+    padding: 0; margin: 0;
+}
+#barre ul li{ /*On modifie les cases des liens*/
+    width: 150px;
+    height: 30px;
+    line-height: 30px; /*pour centrer verticalement -> line-height = height */
+}
+#barre ul li a{ 
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    color: white;
+    height: 30px;
+    background-color: #40e0d0; /*Couleur des cases de la liste*/
+}
+#barre ul li a:hover{ /*Couleur des cases de la lsite en survol*/
+    background-color: #2d9d92;
+}
+#barre ul li a#actuelle{ /*Couleur de la case concernant la page actuelle*/
+    background-color: #2d9d92;
+}
+
+
+nav ul li ul{ /*Fais disparaitre les sous liens quand on ne survole pas le lien parent*/
+    display: none;
+}
+nav ul li:hover ul{ /*Affiche les sous liens en survol du lien parent*/
+    display: block;
+}
+
+@media screen and (max-width: 799px) {/*petit et moyen écran*/
+    #barre{
+        margin-bottom: 0; /* on retire l'espace sous la barre de navigation*/
+        background-color: white;
+    }
+    #barre ul li{ /*cases des liens*/
+        float: none;
+    }
+    #barre ul li ul{ /*sous listes*/
+        margin-left: 100%;
+        margin-top: -30px;
+    }
+    #barre ul li ul li{/*cases des sous-liens*/
+        float: flex;
+    }
+}
+@media screen and (min-width: 800px) { /*grand écran*/
+    #barre{
+        margin-bottom: 75px; /*espace sous la barre de navigation*/
+    }
+    #barre ul li{ /*cases des liens*/
+        float: left;
+    }
+}
+
+/*########################### FIN BARRE DE NAVIGATION ############################*/
+
+/*############################## DEBUT DES BOITES ##############################*/
+.boite{
+    box-shadow: 5px 6px 10px gray; /*droite, bas, rayonnement,*/
+    display: inline-block;
+    border: 5px solid turquoise;
+    margin-bottom: 50px; /*ajoute un espace entre les boîtes*/
+}
+.boite h2{
+    text-align: center;
+}
+
+/*############################## FIN DES BOITES ##############################*/
+
+/*############################## DEBUT DE LA DIVISION DE LA PAGE ACCUEIL ##############################*/
+
+#presentation{/*Affichage de la boite présentation*/
+    border-radius: 10px;
+    width: 370px;
+    float: left;
+}
+#presentation p, #projet p{ /*Texte dans les boîtes présentation et projet*/
+    text-align:center;
+}
+#projet{ /*Affichage de la boite projet*/
+    border-radius: 10px;
+    width: 300px;
+    float: left;
+}
+#photo, #presentation, #projet{
+    margin-right: 20px;
+}
+#index{
+    border-radius: 10px;
+    width: 250px;
+    float: left;
+}
+#index ul{ /*On retire les points de la liste*/
+    list-style-type: none;
+    padding: 0; margin: 0;
+}
+#index ul li a{
+    border: 1px solid #2d9d92;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    color: white;
+    height: 30px;
+    background-color: #40e0d0; /*Couleur des cases de la liste*/
+}
+@media screen and (max-width: 799px) {/*petit et moyen écran*/
+
+}
+@media screen and (min-width: 800px) { /*grand écran*/
+    
+}
+/*############################## FIN DE LA DIVISION DE LA PAGE ACCUEIL ##############################*/
+
+/*############################## DEBUT DE LA DIVISION DE LA PAGE COMPETENCES ##############################*/
+
+/*Cette page étant presque faite avec bootstrap, il y a besoin de peu de CSS.*/
+#competences{ /*On raccourcit la largeur de la boite qui contiendra la liste des compétences*/
+    width: 90%;
+    margin: 50px 5% 0;
+}
+
+/*############################## FIN DE LA DIVISION DE LA PAGE COMPETENCES ##############################*/
+
+/*############################## DEBUT DE LA DIVISION DE LA PAGE PARCOURS ##############################*/
+
+/*Cette page étant presque faite avec bootstrap, il y a besoin de peu de CSS.*/
+#parcours{
+    width:60%;
+    margin: 50px 20% 0;
+}
+#parcours section{
+    border-radius: 10px;
+    width: 100%;
+}
+#parcours p{
+    text-align: center;
+    font-size:large;
+}
+#parcours p ul li{
+    text-align: center;
+}
+/*############################## FIN DE LA DIVISION DE LA PAGE PARCOURS ##############################*/
+
+/*############################## DEBUT DE LA DIVISION DE LA PAGE LOISIRS ##############################*/
+/*##################### DEBUT PARTIE JEUX-VIDEOS #####################*/
+
+#jeux-videos{
+    border-radius: 10px;
+}
+#jeux-videos img{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+@media screen and (max-width: 599px) {/*petit écran*/
+    #jeux-videos{
+        width: 99%; /*Chaque boite prendra 75% de la largeur de la page*/
+        height: auto;
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1399px) {/*moyen écran*/
+    #jeux-videos{
+        width: 49%; /*Chaque boite prendra 75% de la largeur de la page*/
+        height: auto;
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 1400px) { /*grand écran*/
+    #jeux-videos{
+        width: 25%; /*Chaque boite prendra 25% de la largeur de la page*/
+        margin: 10px 4%; /*Laisse un espace à la droite de chaque boite*/
+    }
+}
+/*##################### FIN PARTIE JEUX-VIDEOS #####################*/
+
+/*##################### DEBUT PARTIE BASKETBALL ######################*/
+#basketball{/*Affichage de la boite présentation*/
+    border-radius: 10px;
+    width: 360px;
+    height:auto; /*Changera sa hauteur de la boite selon ce qu'elle contient*/
+}
+#basketball img{ /*Images dans la boîte présentation*/
+    margin: 0 5px;
+    width: 350px;
+    height:200px;
+    border-radius: 5px;
+    float: left; /*Force l'affichage de l'image à gauche de la boite présentation*/
+}
+/*####################### FIN PARTIE BASKETBALL ########################*/
+
+/*##################### DEBUT PARTIE ANIME/MANGA ######################*/
+#manga{
+    border-radius: 10px;
+}
+#manga img{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+@media screen and (max-width: 599px) {/*petit écran*/
+    #manga{
+        width: 99%; /*Chaque boite prendra 75% de la largeur de la page*/
+        height: auto;
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1399px) {/*moyen écran*/
+    #manga{
+        width: 49%; /*Chaque boite prendra 75% de la largeur de la page*/
+        height: auto;
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: 1400px) { /*grand écran*/
+    #manga{
+        width: 25%; /*Chaque boite prendra 25% de la largeur de la page*/
+        margin: 10px 4%; /*Laisse un espace à la droite de chaque boite*/
+    }
+}
+/*####################### FIN PARTIE ANIME/MANGA ########################*/
+
+/*############################## FIN DE LA DIVISION DE LA PAGE LOISIRS ##############################*/
+
+

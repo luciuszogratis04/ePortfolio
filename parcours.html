@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loisirs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/banniere.png" alt="bannière"> <!--width="100%", height="auto"-->
+    </header>
+
+    <!--############################## DEBUT DE LA BARRE DE NAVIGATION ##############################-->
+
+    <nav id="barre">
+        <ul>
+            <li><a href="index.html">Accueil</a>
+                <ul>
+                    <li><a href="index.html">Présentation</a></li> <!--renvoie à l'ancre presenttaion de la page accueil-->
+                    <li><a href="index.html">Projet pro</a></li>
+                </ul>
+            </li>
+            <li><a href="parcours.html" id="actuelle">Parcours</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="loisirs.html">Loisirs</a>
+                <ul>
+                    <li><a href="loisirs.html#jeux-videos">Jeux-vidéos</a></li>
+                    <li><a href="loisirs.html#basketball">Basketball</a></li>
+                    <li><a href="loisirs.html#manga">Manga/Anime</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--############################## FIN DE LA BARRE DE NAVIGATION ##############################-->
+
+    <div class="page"> <!--Cette div comporte toute la page. Elle va raccourcir un peu la largeur de la page entière (sauf la bannière et la barre de navigation) et rajouter un fond de couleur (très peu visible)-->
+        <h1>Parcours</h1> <!--informe sur quelle page nous sommes-->
+        <hr size="3px" color="turquoise"> <!--grande ligne-->
+
+        <!--############################## DEBUT DE LA DIVISION PARCOURS ##############################-->
+
+        
+        <div id="parcours">
+            <h2>Voici un résumé de mon parcours scolaire depuis le collège:</h2>
+            <section class="boite">
+                <h2>Collège</h2>
+                <hr>
+                <p>
+                    <u>Nom:</u> les Amandiers<br>
+                    <u>Lieu:</u> Carrières-sur-seine<br>
+                    <u>Période:</u> 2014-2017<br>
+                    <u>Diplôme obtenu:</u> Brevet sans mention<br><br><br>
+                </p>
+                <hr size="5px" color="turquoise">
+                <hr size="5px" color="turquoise"> <!--double grande ligne-->
+                <h2>Lycée</h2>
+                <hr>
+                <p>
+                    <u>Nom:</u> Lycée Évariste Galois<br>
+                    <u>Lieu:</u> Sartrouville<br>
+                    <u>Période:</u> 2019-2022:<br>
+                    <u>2019-2020 :</u> Seconde et Première Générale<br>
+                    <u>2021-2022 :</u> Première et Terminale STMG (spécialité SIG)<br>
+                    <u>Diplôme obtenu:</u> Baccalauréat - Mention Bien<br><br><br>
+                </p>
+                <hr size="5px" color="turquoise">
+                <hr size="5px" color="turquoise"> <!--double grande ligne-->
+                <h2>Université</h2>
+                <hr>
+                <p>
+                    <u>Nom:</u> IUT Paris Descartes<br>
+                    <u>Lieu:</u> Paris 17e<br>
+                    <u>Période:</u> 2021-20XX<br>
+                </p>
+            </section>
+        </div>
+        <!--############################## FIN DE LA DIVISION PARCOURS ##############################-->
+    </div>
+</body>
+</html>

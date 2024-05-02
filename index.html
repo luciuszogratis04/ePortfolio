@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/banniere.png" alt="bannière"> <!--width="100%", height="auto"-->
+    </header>
+
+    <!--############################## DEBUT DE LA BARRE DE NAVIGATION ##############################-->
+
+    <nav id="barre">
+        <ul>
+            <li><a href="index.html" id="accueil">Accueil</a>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li> <!--renvoie à l'ancre presenttaion de la page accueil-->
+                </ul>
+            </li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="loisirs.html">Loisirs</a>
+                <ul>
+                    <li><a href="loisirs.html#jeux-videos">Jeux-vidéos</a></li>
+                    <li><a href="loisirs.html#basketball">Basketball</a></li>
+                    <li><a href="loisirs.html#manga">Manga/Anime</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--############################## FIN DE LA BARRE DE NAVIGATION ##############################-->
+    
+    <!--############################## FIN DE LA BARRE DE NAVIGATION ##############################-->
+    
+    <div class="page"> <!--Cette div comporte toute la page. Elle va raccourcir un peu la largeur de la page entière (sauf la bannière et la barre de navigation) et rajouter un fond de couleur (très peu visible)-->
+        <h1>Accueil</h1> <!--informe sur quelle page nous sommes-->
+        <hr size="3px" color="turquoise"> <!--grande ligne-->
+
+        <!--############################## DEBUT DE LA DIVISION INTRODUCTION ##############################-->
+
+        <div>
+            <section class="boite" id="presentation">
+                <h2>Présentation</h2>
+                <hr size="5px" color="turquoise">
+                <p>
+                    <u>Nom:</u> Diebakhate<br>
+                    <u>Prénom:</u> Abdouramane<br>
+                    <u>Âge:</u> 18 ans<br><br><br>
+                    <u>Études:</u> IUT Paris Descartes<br>
+                    <u>Formation:</u> BUT Informatique
+                </p>
+            </section>
+            
+            <section class="boite" id="projet">
+                <h2>Projet professionnel</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <p>
+                    À la fin de mes études, je souhaiterai devenir développeur WEB.
+                </p>
+            </section>
+
+            <section class="boite" id="index">
+                <h2>Apprenez-en sur moi !</h2>
+                <hr size="5px" color="turquoise"> <!--grande ligne-->
+                <nav id="pages">
+                    <ul>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
+                        <li><a href="loisirs.html">Loisirs</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <!--############################## FIN DE LA DIVISION INTRODUCTION ##############################--> 
+    </div>            
+</body>
+</html>

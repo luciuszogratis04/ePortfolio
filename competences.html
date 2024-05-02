@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loisirs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/banniere.png" alt="bannière"> <!--width="100%", height="auto"-->
+    </header>
+
+    <!--############################## DEBUT DE LA BARRE DE NAVIGATION ##############################-->
+
+    <nav id="barre">
+        <ul>
+            <li><a href="index.html">Accueil</a>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li> <!--renvoie à l'ancre presenttaion de la page accueil-->
+                    <li><a href="index.html#projet">Projet pro</a></li>
+                </ul>
+            </li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="competences.html" id="actuelle">Compétences</a></li>
+            <li><a href="loisirs.html">Loisirs</a>
+                <ul>
+                    <li><a href="loisirs.html#jeux-videos">Jeux-vidéos</a></li>
+                    <li><a href="loisirs.html#basketball">Basketball</a></li>
+                    <li><a href="loisirs.html#manga">Manga/Anime</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--############################## FIN DE LA BARRE DE NAVIGATION ##############################-->
+    <div class="page"> <!--Cette div comporte toute la page. Elle va raccourcir un peu la largeur de la page entière (sauf la bannière et la barre de navigation) et rajouter un fond de couleur (très peu visible)-->
+
+        <h1>Compétences</h1> <!--informe sur quelle page nous sommes-->
+        <hr size="3px" color="turquoise"> <!--grande ligne-->
+
+        <!--############################## DEBUT DE LA DIVISION COMPETENCES ##############################-->
+
+        <h2>Voici un apperçu de mes compétences:</h2>
+        <div id="competences">
+            <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+                <a class="navbar-brand" href="#">Accès rapide aux compétences</a>
+                <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Rédaction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Travail d'équipe</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Programmation</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">WEB</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Langage C</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Langage Python</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+                <h4 id="scrollspyHeading1">Rédaction</h4>
+                <p>Compétence simple, mais élémentaire. Je suis apte à écrire de longs textes simple, compréhensibles et sans faute, ce qui peut être très utile pour rédiger des comptes rendus, des articles, ou autres.</p>
+                <h4 id="scrollspyHeading2">Travail d'équipe</h4>
+                <p>Durant toute ma scolarité depuis l'école primaire jusqu'aujourd'hui, j'ai été amené maintes fois à travailler en groupe pour des devoirs, sur table, et devoirs maison. Cela insinue donc que je suis apte à travailler en groupe en présentiel <u>et</u> en distanciel. J'ai dû utiliser une multitude de moyens de communication afin de travailler en distanciel, donc je suis habitué à m'adapter à ces différentes manières de travailler.</p>
+                <h4 id="scrollspyHeading3">Développement WEB</h4>
+                <p>Depuis le lycée, et même pour mon expérience personnelle, j'ai élaboré différents sites web, ce qui m'a fait beaucoup gagner d'expérience en développement WEB. Je me challenge personnellement à créer des sites WEB avec différentes contraintes, plus ou moins farfelues. Tout cela m'amène donc à être plutôt expérimenté en développement WEB.</p>
+                <h4 id="scrollspyHeading4">Développement en C</h4>
+                <p>Ayant suivi des cours en C durant mes études à l'IUT Paris Descartes, j'ai acquis de grandes connaissances en ce langage primordial. Il me servira à apprendre plus efficacement d'autres langages, et bien sûr programmer des application dans ce langage.</p>
+            </div>
+        </div>
+        <!--############################## FIN DE LA DIVISION COMPETENCES ##############################-->
+    </div>
+</body>
+</html>
